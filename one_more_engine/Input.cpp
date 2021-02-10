@@ -4,14 +4,14 @@
 i32 active_joystick = -1;
 bool joystick_update = true;
 
-void
+static void
 ZeroJoysticks(Input* input)
 {
   memset(input->axis, 0, sizeof(f32) * AXIS_COUNT);
   memset(input->button_states, 0, sizeof(u8) * BUTTON_COUNT);
 }
 
-void
+static void
 GetActiveJoystick()
 {
   active_joystick = -1;

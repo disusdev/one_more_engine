@@ -1,7 +1,7 @@
 
 #include "PCH.h"
 
-f32
+static f32
 GetTime(i64 awake)
 {
   return (std::chrono::steady_clock::now().time_since_epoch().count() - awake) * 0.000000001f;
