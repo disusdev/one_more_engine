@@ -51,6 +51,8 @@ RunApplication(Application* app)
 
     // draw
     PollEvents(&app->window);
+
+
   }
 
   TermWindow(&app->window);

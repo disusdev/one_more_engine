@@ -122,13 +122,13 @@
       <ExceptionHandling>false</ExceptionHandling>
       <PrecompiledHeader>Use</PrecompiledHeader>
       <PrecompiledHeaderFile>PCH.h</PrecompiledHeaderFile>
-      <AdditionalIncludeDirectories>$(SolutionDir)extern/vkbind/;$(SolutionDir)extern/glfw/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(VULKAN_SDK)/Include/;$(SolutionDir)extern/glfw/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalDependencies>glfw_$(PlatformShortName)_$(Configuration).lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <AdditionalLibraryDirectories>$(SolutionDir).libs/</AdditionalLibraryDirectories>
+      <AdditionalDependencies>vulkan-1.lib;glfw_$(PlatformShortName)_$(Configuration).lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir).libs/;$(VULKAN_SDK)/Lib/</AdditionalLibraryDirectories>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
