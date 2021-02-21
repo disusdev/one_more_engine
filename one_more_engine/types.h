@@ -2,6 +2,9 @@
 
 #define BIT(X) (1 << X)
 
+#define BIT_COMPARE(src, cmp) ((src & cmp) == cmp)
+#define BIT_N_COMPARE(src, cmp) ((src & cmp) != cmp)
+
 typedef uint8_t  u8;
 typedef uint16_t u16;
 typedef uint32_t u32;

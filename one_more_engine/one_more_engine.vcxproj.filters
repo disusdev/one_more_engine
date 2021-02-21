@@ -6,6 +6,13 @@
     <ClCompile Include="Application.cpp" />
     <ClCompile Include="Window.cpp" />
     <ClCompile Include="Input.cpp" />
+    <ClCompile Include="CVar.cpp" />
+    <ClCompile Include="Vulkan.cpp" />
+    <ClCompile Include="Renderer.cpp" />
+    <ClCompile Include="vkAllocator.cpp" />
+    <ClCompile Include="BufferObject.cpp" />
+    <ClCompile Include="vma.cpp" />
+    <ClCompile Include="Staging.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="PCH.h" />
@@ -13,5 +20,13 @@
     <ClInclude Include="Application.h" />
     <ClInclude Include="Window.h" />
     <ClInclude Include="Input.h" />
+    <ClInclude Include="Vulkan.h" />
+    <ClInclude Include="CVar.h" />
+    <ClInclude Include="Renderer.h" />
+    <ClInclude Include="Image.h" />
+    <ClInclude Include="vkAllocator.h" />
+    <ClInclude Include="BufferObject.h" />
+    <ClInclude Include="vma.h" />
+    <ClInclude Include="Staging.h" />
   </ItemGroup>
 </Project>

@@ -12,6 +12,8 @@ RunApplication(Application* app)
 {
   InitWindow(&app->window, 800, 600, "one_more_engine");
 
+  InitRenderer(app->window);
+
   Input input;
 
   app->awakeTime = std::chrono::steady_clock::now().time_since_epoch().count();
